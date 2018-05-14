@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryadita.www.tgs_datamahasiswa.DetailActivity">
+
+    <TextView
+        android:id="@+id/txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_judul"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="45dp"
+        android:textSize="17sp"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/isi_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_judul"
+        android:layout_marginEnd="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/txt_nama"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_nama"
+        android:layout_below="@id/txt_nama"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:text="NIM" />
+
+    <TextView
+        android:id="@+id/isi_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/isi_nama"
+        android:layout_below="@id/isi_nama"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_nama"
+        android:layout_below="@id/txt_nim"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:text="Prodi" />
+
+    <TextView
+        android:id="@+id/isi_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/isi_nama"
+        android:layout_below="@id/isi_nim"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txt_nama"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/txt_prodi"
+        android:textSize="17sp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/isi_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/isi_nama"
+        android:layout_below="@id/isi_prodi"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:onClick="kembalikeLihat"
+        android:text="Kembali" />
+
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textSize="20sp"
+        android:text="Detail Biodata Mahasiswa" />
+
+</RelativeLayout>

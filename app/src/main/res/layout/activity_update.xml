@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryadita.www.tgs_datamahasiswa.UpdateActivity">
+
+    <Button
+        android:id="@+id/btn_bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="backLihat"
+        android:text="Kembali" />
+
+    <Button
+        android:id="@+id/btn_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_bck"
+        android:layout_alignBottom="@+id/btn_bck"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/btn_update"
+        android:onClick="emptyData"
+        android:text="Kosongkan"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_empty"
+        android:layout_alignBottom="@+id/btn_empty"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:onClick="ubahData"
+        android:text="Update"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/masukkan_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toEndOf="@id/name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukkan_induk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/noinduk"
+        android:layout_alignBottom="@id/noinduk"
+        android:layout_alignStart="@+id/masukkan_nama"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukkan_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masukkan_induk"
+        android:layout_toEndOf="@id/depart"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/masukkan_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masukkan_prodi"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/mail"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="Nama  :" />
+
+    <TextView
+        android:id="@+id/noinduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="NIM   :" />
+
+    <TextView
+        android:id="@+id/depart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noinduk"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="Prodi :" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/depart"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Email :" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Data Mahasiswa"
+        android:textSize="20sp"
+
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

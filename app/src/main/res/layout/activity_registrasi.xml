@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryadita.www.tgs_datamahasiswa.RegistrasiActivity">
+
+    <Button
+        android:id="@+id/btn_kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="123dp"
+        android:onClick="backtoMain"
+        android:text="Kembali" />
+
+    <Button
+        android:id="@+id/btn_kosong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_kembali"
+        android:layout_marginEnd="19dp"
+        android:onClick="kosongkanData"
+        android:text="Kosongkan" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_kembali"
+        android:layout_centerHorizontal="true"
+        android:onClick="createData"
+        android:text="Simpan" />
+
+    <EditText
+        android:id="@+id/input_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_toEndOf="@id/name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nim"
+        android:layout_alignBottom="@+id/nim"
+        android:layout_alignStart="@+id/input_nama"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_nim"
+        android:layout_toEndOf="@id/prodi"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_prodi"
+        android:layout_toEndOf="@id/email"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="Nama  :" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="NIM   :" />
+
+    <TextView
+        android:id="@+id/prodi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nim"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:text="Prodi :" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prodi"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:text="Email :" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Registrasi Data Mahasiswa"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>
